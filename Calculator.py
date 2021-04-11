@@ -1,3 +1,5 @@
+# Warning overly complicated code for a calculator ahead.
+
 import time
 def add(a, b):
     return a + b
