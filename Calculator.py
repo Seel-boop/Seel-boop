@@ -1,4 +1,4 @@
-# Warning overly complicated code for a calculator ahead.
+# An overly complicated calculator utilising the return function
 
 import time
 def add(a, b):
@@ -16,6 +16,7 @@ def start_addition():
     res = add(x, y)
     print(res)
     time.sleep(10)
+    loop()
 def start_subtraction():
     x = int(input("Please enter number: "))
     y = int(input("Please enter number: "))
@@ -23,6 +24,7 @@ def start_subtraction():
     res = subtract(x, y)
     print(res)
     time.sleep(10)
+    loop()
 def start_division():
     x = int(input("Please enter number: "))
     y = int(input("Please enter number: "))
@@ -30,6 +32,7 @@ def start_division():
     res = division(x, y)
     print(res)
     time.sleep(10)
+    loop()
 def start_multiplication():
     x = int(input("Please enter number: "))
     y = int(input("Please enter number: "))
@@ -37,6 +40,7 @@ def start_multiplication():
     res = multiply(x, y)
     print(res)
     time.sleep(10)
+    loop()
 def start():
     # Beginning to decide which function to access
     g = input("""Please enter
@@ -56,5 +60,12 @@ def start():
     if g == "4":
         start_multiplication()
     elif g == "5":
+        exit()
+
+def loop():
+    yorn = input("Do you want to enter another calculaton y or n: ")
+    if yorn == "y":
+        start()
+    if yorn == "n":
         exit()
 start()
