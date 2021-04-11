@@ -1,3 +1,4 @@
+#Fib is just fibbonaci sequence
 a = 0
 b = 1
 e = int(input("Please enter how many iterations of the fibbonaci sequence you want: "))
